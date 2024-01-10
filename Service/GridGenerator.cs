@@ -70,21 +70,6 @@ namespace MineSweeperSolution.Service
                 //columnIndex
                 mineLocations[i, 1] = rnd.Next(0, mine.Grid.GetLength(1));
             }
-
-            ////// TODELETE
-            //// A2
-            //// [[0,1], [1,1], [2,0]]
-            //mineLocations[0, 0] = 0; //A
-            //mineLocations[0, 1] = 1; //2
-
-            //// B2
-            //mineLocations[1, 0] = 1; //B
-            //mineLocations[1, 1] = 1; //2
-
-            //// C1
-            //mineLocations[2, 0] = 2; //C
-            //mineLocations[2, 1] = 0; //1
-
             mineLocator.AllocateMines(mineLocations);
         }
 
